@@ -60,13 +60,13 @@ while (current <= number)
 */
 
 // Задача 5. Напишите программу, которая принимает на вход трехзначное число и на выходе показывает последнюю цифру этого числа.
-
+/*
 Console.Write("Input three digit number: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
 int last_digit = number % 10;
 Console.WriteLine($"The last digit of {number} is {last_digit}");
-
+*/
 
 
 
