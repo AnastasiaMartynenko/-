@@ -37,31 +37,25 @@ int number  = Convert.ToInt32(Console.ReadLine());
 int new_digit = FindThirdDigit(number);
 Console.WriteLine(new_digit);
 
-*/
-/*
-int FindThirdDigit (int[] array)    //<<== Второй неправильный способ
-{  
-   int number = array.Length;
-   int index = 0;
-   int third_digit = array[2];
-   while (index < 2)
-   {
-      Console.WriteLine("Here is no third digit");
-      index++;
-   }
-      if(index == 2)
-      {
-         Console.WriteLine("It is third digit of {number}");
-      } 
-   return array[2];
-}
+//Второй стобос решения 13й задачи 
 
 Console.Write("Input a number: ");
-int number  = Convert.ToInt32(Console.ReadLine());
-int new_digit = FindThirdDigit(number);
-Console.WriteLine(new_digit);
-*/
 
+int number = Convert.ToInt32(Console.ReadLine());
+int current_number = number;
+
+if(number < 99)
+  {
+   Console.WriteLine($"{current_number} doesn't contain the third digit"); 
+  }    
+
+  while(number > 999)
+      {
+         current_number = number / 10;
+         current_number--;
+
+            if(number <= 999)
+               Console.WriteLine($"The third digit of {number} is {number % 10}");
 
 
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
