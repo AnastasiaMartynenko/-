@@ -2,7 +2,6 @@
 //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 //A (3,6,8); B (2,1,-7), -> 15.84
 //A (7,-5, 0); B (1,-1,9) -> 11.53
-
 /*
 double FindDistance (double x1, double y1, double z1, double x2, double y2, double z2)
 {
@@ -32,20 +31,21 @@ Console.WriteLine($"Distance is {coordinate}");
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
 
+
 void ShowCubeTable (int n)
-{
+ {
     int current_number = 0; //Первое число, с которого начнет отсчет (начнем с нуля, например)
     int cube; //просто переменная куба числа
 
 
-    while(current_number < n )
+    while (current_number < n)
        {
             cube = current_number * current_number * current_number;
             Console.WriteLine($"The cube of {current_number} is {cube} .");
             current_number++;
         }
-}
+        
+ }
 Console.Write("Input any intenger number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ShowCubeTable(number);//просто вставили метод(т.к. он у нас void)
-
