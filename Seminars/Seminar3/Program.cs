@@ -1,4 +1,5 @@
 ﻿//Задача 0. Напишите программу, которая по координатам х и y, показывает номер четверти.
+/*
 int FindQuart(double x, double y)
 {
     if(x > 0 && y > 0) return 1;
@@ -24,7 +25,7 @@ else
     Console.WriteLine($"The point is located on {quartNum} quart");
 
 }
-
+*/
 
 //Задача 1. Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y)
 /*
@@ -32,7 +33,7 @@ void FindCooardinats (int quarter)
 {
    if(quarter == 1) 
    Console.WriteLine("Диапазон (х+, y+)");
-   if(qquarter == 2)
+   if(quarter == 2)
    Console.WriteLine("Диапазон (х-, y+)");
    if(quarter == 3)
    Console.WriteLine("Диапазон (х-, y-)");
