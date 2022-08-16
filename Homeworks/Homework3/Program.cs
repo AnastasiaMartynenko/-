@@ -36,21 +36,14 @@ void ShowCubeTable (int n)
 {
     int current_number = 0; //Первое число, с которого начнет отсчет (начнем с нуля, например)
     int cube; //просто переменная куба числа
-    while(current_number < n)
 
-    {
-       cube = current_number * current_number * current_number;
-       Console.WriteLine($"The cube of {current_number} is {cube} .");
-       current_number++;
 
-        if(current_number < 0)
+    while(current_number < n || current_number <0)
        {
             cube = current_number * current_number * current_number;
-               Console.WriteLine($"The cube of {current_number} is {cube} .");
-               current_number++;
+            Console.WriteLine($"The cube of {current_number} is {cube} .");
+            current_number++;
         }
-    }
-    
 }
 Console.Write("Input any intenger number: ");
 int number = Convert.ToInt32(Console.ReadLine());
