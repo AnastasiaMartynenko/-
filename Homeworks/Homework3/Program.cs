@@ -31,14 +31,14 @@ Console.WriteLine($"Distance is {coordinate}");
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
-/*
+
 void ShowCubeTable (int n)
 {
     int current_number = 0; //Первое число, с которого начнет отсчет (начнем с нуля, например)
     int cube; //просто переменная куба числа
 
 
-    while(current_number < n || current_number <0)
+    while(current_number < n )
        {
             cube = current_number * current_number * current_number;
             Console.WriteLine($"The cube of {current_number} is {cube} .");
@@ -48,4 +48,4 @@ void ShowCubeTable (int n)
 Console.Write("Input any intenger number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ShowCubeTable(number);//просто вставили метод(т.к. он у нас void)
-*/
+
