@@ -56,7 +56,6 @@ if(number < 99)
   while(number > 999)
       {
          current_number = number / 10;
-         current_number--;
 
             if(number <= 999)
                Console.WriteLine($"The third digit of {number} is {number % 10}");
