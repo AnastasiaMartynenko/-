@@ -15,8 +15,8 @@ Console.WriteLine($"{newNumber} it the third digit of {randomNumber}");
 //645 -> 5
 //78 -> третьей цифры нет
 //32679 -> 6
-/*
 
+/*
 int FindThirdDigit (int[] array, int number)   // <<== первый неправильный способ
 {  
    number = array.Length;
@@ -41,6 +41,7 @@ Console.WriteLine(new_digit);
 */
 
 //Второй стобос решения 13й задачи 
+/*
 
 Console.Write("Input a number: ");
 
@@ -60,6 +61,7 @@ if(number < 99)
             if(number <= 999)
                Console.WriteLine($"The third digit of {number} is {number % 10}");
       }
+*/
 
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 /*
