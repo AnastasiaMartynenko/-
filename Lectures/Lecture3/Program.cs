@@ -137,7 +137,7 @@ Console.WriteLine(newText);
 Console.WriteLine();
 newText = Replace(text, 'к', 'К');
 */ 
-
+/*
 //Задача. Нужно упорядочить массив.
 int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
 void PrintArray(int[] array)
@@ -172,3 +172,4 @@ SelectionSort(arr); //эта форма вызывает программу уп
 
 
 PrintArray(arr);
+*/
