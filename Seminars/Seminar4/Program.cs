@@ -96,11 +96,11 @@ for (int i = 0; i < size; i++) // здесь мы пишем цикл,
     newArray[i] = new Random().Next(minValue, maxValue + 1); //maxValue + 1 - это крайний и самый большой элемент массива; пишем + 1, т.к. индексация массива начинается с нуля
     return newArray;// массив возвращаем без каких-либо скобок.
 }
-void ShowArray(int[] array)
+void ShowArray(int[] array) //этот новый метод нужен для того, чтобы вывести на экран уже сгенерированный ранее массив.
 {
-    for(int i = 0; i < array.Length; i++)
-        Console.Write(array[i] + " ");
-    Console.WriteLine();
+    for(int i = 0; i < array.Length; i++) // array.Lenght - т.к. мы не знаем крайнего элемента массива
+        Console.Write(array[i] + " "); // - эта хнеротень нужна для того, чтобы вывести на экран все элементы массива через пробел
+    Console.WriteLine(); // а эта хренотень нужна для того, чтобы мы перешли на другую строку 
 }
 Console.Write("Input size for array: ");
 int a = Convert.ToInt32(Console.ReadLine());
@@ -108,5 +108,6 @@ Console.Write("Input min possible value of element: ");
 int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input max possible value of element: ");
 int max = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateRandomArray (a, min, max);
-ShowArray(myArray);
+
+int[] myArray = CreateRandomArray (a, min, max); // в новый массив myArray входит метод и то, что сгенерируется исходя из верхних трех запросов у пользователя
+ShowArray(myArray);// этот метод мы вызываем в самом конце, чтобы показать наш массив. Т.к. это метод типа void, то мы его не присвоили ни в какую переменную
