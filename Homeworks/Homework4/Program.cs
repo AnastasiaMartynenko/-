@@ -70,4 +70,4 @@ Console.WriteLine("Input size for array you want to see: ");
 int user_array_size = Convert.ToInt32(Console.ReadLine());
 int[]our_last_array = CreateRandomArray(user_array_size); //создали новую переменню и положили туда метод
 
-PrintArray(our_last_array); //возвращем void метод, с методом в скобках
+PrintArray(our_last_array); //возвращем void метод, с массивом в скобках
