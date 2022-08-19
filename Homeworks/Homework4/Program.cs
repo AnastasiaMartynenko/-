@@ -39,4 +39,22 @@ int user_number = Convert.ToInt32(Console.ReadLine());
 int sum_of_digits = FindSum(user_number);
 Console.WriteLine($"Sum of all digit from {user_number} is {sum_of_digits}");
 */
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+//1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+//6, 1, 33 -> [6, 1, 33]
 
+void DandomArray8(int[] array)
+
+Console.WriteLine("Input an intenger number");
+int a = Convert.ToInt32(Console.ReadLine());
+
+
+
+{
+    int [] newArray = new int[size];
+
+
+
+
+
+}

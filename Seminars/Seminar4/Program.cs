@@ -88,12 +88,13 @@ int[] myArray = CreateRandomArray(user_array, user_min, user_max);
 ShowArray(myArray);
 */
 // Задача 4. Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
-int[] CreateRandomArray(int size, int minValue, int maxValue)
+int[] CreateRandomArray(int size, int minValue, int maxValue) // Значения даже в рандомном массиве, все равно должны ограничиваться какими-то пределами, поэтому берем minValue и maxValue
 {
-int [] newArray = new int[size];
-for (int i = 0; i < size; i++)
-    newArray[i] = new Random().Next(minValue, maxValue + 1);
-    return newArray;
+int [] newArray = new int[size]; // в начале нам нужно выделить под массив память, т.е. создать ему переменную 
+                                 // new int[size] - это мы создали новую переменную, в которой есть память под определенное количество ячеек массива
+for (int i = 0; i < size; i++) // здесь мы пишем цикл, 
+    newArray[i] = new Random().Next(minValue, maxValue + 1); //maxValue + 1 - это крайний и самый большой элемент массива; пишем + 1, т.к. индексация массива начинается с нуля
+    return newArray;// массив возвращаем без каких-либо скобок.
 }
 void ShowArray(int[] array)
 {
