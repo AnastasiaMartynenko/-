@@ -43,7 +43,7 @@ Console.WriteLine($"Sum of all digit from {user_number} is {sum_of_digits}");
 //1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 //6, 1, 33 -> [6, 1, 33]
 
-int[] CreateRandomArray(int size) 
+int[] CreateRandomArray(int size, int maxValue, int minValue) 
 {
 int[] newArray = new int[8]; // в начале нам нужно выделить под массив память, т.е. создать ему переменную массива - int[] newArra
                                  // new int[8] - это мы создали новую переменную, в которой есть память типа int для восьми ячеек массива (восемь - size)
@@ -68,6 +68,11 @@ void PrintArray(int[] array) //этот новый метод нужен для 
 
 Console.WriteLine("Input size for array you want to see: ");
 int user_array_size = Convert.ToInt32(Console.ReadLine());
-int[]our_last_array = CreateRandomArray(user_array_size); //создали новую переменню и положили туда метод
+Console.WriteLine("Input max value for the elements: ");
+int max_value = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input min value for the elements: ");
+int min_value = Convert.ToInt32(Console.ReadLine());
+
+int[]our_last_array = CreateRandomArray(user_array_size, max_value, min_value); //создали новую переменню и положили туда метод
 
 PrintArray(our_last_array); //возвращем void метод, с массивом в скобках
