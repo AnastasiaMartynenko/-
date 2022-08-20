@@ -88,6 +88,7 @@ int[] myArray = CreateRandomArray(user_array, user_min, user_max);
 ShowArray(myArray);
 */
 // Задача 4. Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+/*
 int[] CreateRandomArray(int size, int minValue, int maxValue) // Значения даже в рандомном массиве, все равно должны ограничиваться какими-то пределами, поэтому берем minValue и maxValue
 {
 int [] newArray = new int[size]; // в начале нам нужно выделить под массив память, т.е. создать ему переменную 
@@ -111,3 +112,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray = CreateRandomArray (a, min, max); // в новый массив myArray входит метод и то, что сгенерируется исходя из верхних трех запросов у пользователя
 ShowArray(myArray);// этот метод мы вызываем в самом конце, чтобы показать наш массив. Т.к. это метод типа void, то мы его не присвоили ни в какую переменную
+*/
