@@ -53,40 +53,7 @@ int user_number = Convert.ToInt32(Console.ReadLine());
 int composion = FindFactorial(user_number);
 Console.WriteLine($"Factorail of {user_number} is {composion}");
 */
-//Задача 4, которую не хватило ума переписать. Она неправильная. Напишите программу, которая вывод массив из восьми элементов, заполненный нолями и единицами в случайном порядке.
-/*
-int[] CreateRandomArray(int size, int minValue, int maxValue)
-{
-  int[] newArray = new int[size];
 
-  for(int i = 0; i < size; i++)
-  
-    newArray[i] = new Random().Next(minValue, maxValue + 1); //maxValue + 1 - потому, что максимально(последнее значение всегда на один меньше, т.к. индексация начинается с нуля)
-  
-  return newArray; //массив возвращается без скобок, как обычная переменная
-}
-
-void ShowArray(int[] array)
-{
-  for(int i = 0; i < array.Length; i++)
- 
-    Console.Write($"array[i] + "); 
-  
-  Console.WriteLine(); // Здесь мы используем эту конструкцию, чтобы возникла пустая строка и все вместе не слипалось
-  
-}
-
-
-Console.Write("Imput size for array: ");
-int user_array = Convert.ToInt32(Console.ReadLine());
-Console.Write("Imput min value for an element: ");
-int user_min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Imput max value for an element: ");
-int user_max = Convert.ToInt32(Console.ReadLine());
-
-int[] myArray = CreateRandomArray(user_array, user_min, user_max);
-ShowArray(myArray);
-*/
 // Задача 4. Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
 /*
 int[] CreateRandomArray(int size, int minValue, int maxValue) // Значения даже в рандомном массиве, все равно должны ограничиваться какими-то пределами, поэтому берем minValue и maxValue
@@ -113,3 +80,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray (a, min, max); // в новый массив myArray входит метод и то, что сгенерируется исходя из верхних трех запросов у пользователя
 ShowArray(myArray);// этот метод мы вызываем в самом конце, чтобы показать наш массив. Т.к. это метод типа void, то мы его не присвоили ни в какую переменную
 */
+
