@@ -157,13 +157,14 @@ void ShowArray(int[] array) //этот новый метод нужен для �
 }
 bool CheckNumber (int[] array, int number)
 {
-    bool result;
+    bool result = false;
     for (int index = 0; index < array.Length; index++)
     {
-        if(array[index] == number) result = true;
-        else 
+        if(array[index] == number) 
+        result = true;
+        else
         result = false;
-    }  
+    }
     return result;
 }
 Console.Write($"Input size for array: ");
@@ -175,8 +176,9 @@ int user_integer_number = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray = CreateArray(arrayUser);
 ShowArray(myArray);
-CheckNumber(myArray, user_integer_number);
-
+bool check_number = CheckNumber(myArray, user_integer_number);
+if (check_number == true) Console.WriteLine($"Number {user_integer_number} is located on this array");
+else Console.WriteLine($"Number {user_integer_number} is located on this array");
 
 
 
