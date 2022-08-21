@@ -163,14 +163,14 @@ bool CheckNumber(int[] array, int n)
     return false;
 }
 Console.Write("Input size for array: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int user_array = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input integer number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateArray (a);
+int user_any_number = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateArray (user_array);
 ShowArray(myArray);
-bool check = CheckNumber(myArray, number);
-if (check == true) Console.WriteLine($"Число {number} найдено в заданном массиве");
-else Console.WriteLine($"Число {number} не найдено в заданном массиве");
+bool check = CheckNumber(myArray, user_any_number);
+if (check == true) Console.WriteLine($"Число {user_any_number} найдено в заданном массиве");
+else Console.WriteLine($"Число {user_any_number} не найдено в заданном массиве");
 
 
 
