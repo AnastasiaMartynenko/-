@@ -137,48 +137,40 @@ ShowArray(ChangeElements(myArray)); //Attention!!! Мы поместили на�
 //Например, мы решили, что будем просить пользователя что-то ввести. Нам нужно, чтобы он ввел массив и число, которое мы будем искать в этом массиве.
 //Тут лучше использовать тип bool, т.к. нам просто нужно ответить, есть ли число пользователя в массиве или нет. 
 
-int[] CreateArray(int size) 
-{
-int[] newArray = new int[size]; 
-    for (int index = 0; index < size; index++)
-    {
-        Console.Write($"Input {index} element of array: ");
-        newArray[index] = Convert.ToInt32(Console.ReadLine());//то, что введет пользователь мы положим в массив под index-ом
-    }
-    
-    return newArray; //массив возвращаем без скобок
-} 
 
-void ShowArray(int[] array) //этот новый метод нужен для того, чтобы вывести на экран уже сгенерированный ранее массив.
+int[] CreateArray(int size)
 {
-    for(int index = 0; index < 8; index++) 
-        Console.Write(array[index] + " "); // - этo нужно для того, чтобы вывести на экран все элементы массива через пробел
-        Console.WriteLine(); // это нужно, чтобы напечатать пустую строку
+    int [] newArray = new int[size];
+    for (int i = 0; i < size; i++)
+        {
+        Console.Write($"Input {i} element of the array: ");
+        newArray[i] = Convert.ToInt32(Console.ReadLine());    
+        }
+    return newArray;
 }
-bool CheckNumber (int[] array, int number)
+void ShowArray(int[] array)
 {
-    bool result = false;
-    for (int index = 0; index < array.Length; index++)
-    {
-        if(array[index] == number) 
-        result = true;
-        else
-        result = false;
-    }
-    return result;
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
 }
-Console.Write($"Input size for array: ");
-int arrayUser = Convert.ToInt32(Console.ReadLine());
-
-Console.Write($"Input any intenger number: ");
-int user_integer_number = Convert.ToInt32(Console.ReadLine());
-
-
-int[] myArray = CreateArray(arrayUser);
+bool CheckNumber(int[] array, int n)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] == n) return true; 
+    }
+    return false;
+}
+Console.Write("Input size for array: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input integer number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateArray (a);
 ShowArray(myArray);
-bool check_number = CheckNumber(myArray, user_integer_number);
-if (check_number == true) Console.WriteLine($"Number {user_integer_number} is located on this array");
-else Console.WriteLine($"Number {user_integer_number} is located on this array");
+bool check = CheckNumber(myArray, number);
+if (check == true) Console.WriteLine($"Число {number} найдено в заданном массиве");
+else Console.WriteLine($"Число {number} не найдено в заданном массиве");
 
 
 
