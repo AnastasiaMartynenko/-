@@ -137,7 +137,7 @@ ShowArray(ChangeElements(myArray)); //Attention!!! Мы поместили на�
 //Например, мы решили, что будем просить пользователя что-то ввести. Нам нужно, чтобы он ввел массив и число, которое мы будем искать в этом массиве.
 //Тут лучше использовать тип bool, т.к. нам просто нужно ответить, есть ли число пользователя в массиве или нет. 
 
-
+/*
 int[] CreateArray(int size)
 {
     int [] newArray = new int[size];
@@ -171,7 +171,7 @@ ShowArray(myArray);
 bool check = CheckNumber(myArray, user_any_number);
 if (check == true) Console.WriteLine($"Число {user_any_number} найдено в заданном массиве");
 else Console.WriteLine($"Число {user_any_number} не найдено в заданном массиве");
-
+*/
 
 
 
@@ -180,6 +180,75 @@ else Console.WriteLine($"Число {user_any_number} не найдено в з�
 // То есть нам нужно определить количество двухзначных чисел, которые в этом массиве есть. 
 //Тут на вход в третий метод мы будем брать массив и два числа.
 //А возвращать будем числа в отрезке между этими двумя числами.
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+int [] newArray = new int[size];
+for (int i = 0; i < size; i++)
+    newArray[i] = new Random().Next(minValue, maxValue + 1);
+    return newArray;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+int CountElements(int[] array, int min, int max)
+{
+    int count = 0;
+    
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] >= min && array[i]<= max) count++;
+    }
+   return count;
+}
+Console.Write("Input size for array: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min value: ");
+int min1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max value: ");
+int max1 = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateRandomArray (a, min, max);
+ShowArray(myArray);
+int result = CountElements(myArray, min1, max1);
+Console.WriteLine($"Количество элементов массива, находящихся в заданном отрезке, равно {result}");
+*/
 
-
-
+// Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+int [] newArray = new int[size];
+for (int i = 0; i < size; i++)
+    newArray[i] = new Random().Next(minValue, maxValue + 1);
+    return newArray;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+int[] CompositionPairsOfElements(int[] array)
+{
+    int[] newArray = new int [array.Length / 2];
+    for (int i = 0; i < array.Length / 2; i++)
+    {
+        newArray[i] = array[i]*array[array.Length - 1 - i];
+    }
+   return newArray;
+}
+Console.Write("Input size for array: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateRandomArray (a, min, max);
+ShowArray(myArray);
+ShowArray(CompositionPairsOfElements(myArray));
