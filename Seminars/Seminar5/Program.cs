@@ -166,6 +166,7 @@ Console.Write("Input size for array: ");
 int user_array = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input integer number: ");
 int user_any_number = Convert.ToInt32(Console.ReadLine());
+
 int[] myArray = CreateArray (user_array);
 ShowArray(myArray);
 bool check = CheckNumber(myArray, user_any_number);
@@ -220,7 +221,7 @@ int result = CountElements(myArray, min1, max1);
 Console.WriteLine($"Количество элементов массива, находящихся в заданном отрезке, равно {result}");
 */
 
-// Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+// Задача 5. Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
 int [] newArray = new int[size];
@@ -249,6 +250,7 @@ Console.Write("Input min possible value of element: ");
 int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input max possible value of element: ");
 int max = Convert.ToInt32(Console.ReadLine());
+
 int[] myArray = CreateRandomArray (a, min, max);
 ShowArray(myArray);
 ShowArray(CompositionPairsOfElements(myArray));
