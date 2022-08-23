@@ -222,6 +222,7 @@ Console.WriteLine($"Количество элементов массива, на
 */
 
 // Задача 5. Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+/*
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
 int [] newArray = new int[size];
@@ -254,3 +255,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray (a, min, max);
 ShowArray(myArray);
 ShowArray(CompositionPairsOfElements(myArray));
+*/
