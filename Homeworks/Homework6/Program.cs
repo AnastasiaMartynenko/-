@@ -52,8 +52,8 @@ Console.WriteLine($"There are {positive_numbers} positive numbers");
 void FindCrossingPoint (double b1, double k1, double b2, double k2) // это координаты, которые мы будем просить пользователя ввести
 {
     double x = (b1 - b2) / (k2 - k1);
-    double y = (k2 * b1 - k1 * b2) / ( k2 - k1);
-    if(k1 ==k2)
+    double y = k1 * x + b1;
+    if(k1 == k2)
     Console.WriteLine($"Lines do not intersect");
     else
     Console.WriteLine($"The crossing points are: {x} and {y}");
