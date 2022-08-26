@@ -76,8 +76,6 @@ ShowArray(myArray);
 int sum_odd_numbers = FindSumOddNumbers(myArray);
 Console.WriteLine($"Sum of all odd index elements of array is {sum_odd_numbers}");
 */
-//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-//[3 7 22 2 78] -> 76
 
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
