@@ -81,7 +81,7 @@ Console.WriteLine($"Sum of all odd index elements of array is {sum_odd_numbers}"
 
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
-
+/*
 int[] CreateRandomArray(int size, int minValue, int maxValue) //когда я меняла int на double программа не срабатывала
 {
 int [] newArray = new int[size];
@@ -121,3 +121,4 @@ int[] myArray = CreateRandomArray (array_size, min, max);
 ShowArray(myArray);
 int dif = FindDifBetweenMaxMin(myArray);
 Console.WriteLine($"The difference between min and max elements is {dif}");
+*/
