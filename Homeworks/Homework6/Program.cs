@@ -48,7 +48,7 @@ Console.WriteLine($"There are {positive_numbers} positive numbers");
 //(k1 - k2) * x = b2 - b1
 //x = (b2 - b1) / (k1 - k2)
 //y = k1 * x + b1
-
+/*
 void FindCrossingPoint (double b1, double k1, double b2, double k2) // это координаты, которые мы будем просить пользователя ввести
 {
     double x = (b1 - b2) / (k2 - k1);
@@ -69,3 +69,4 @@ int k2 = Convert.ToInt32(Console.ReadLine());
 
 FindCrossingPoint(k1, b1, k2, b2);
 
+*/
