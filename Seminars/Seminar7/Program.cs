@@ -180,6 +180,7 @@ SumOfElementsOfArray(myArray);
 Console.WriteLine($"Sum of elements main diagonale is {sum}");
 */
 //Задача 4. Второй способ решения. Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
+/*
 int[,] CreateRandom2dArray(int rows, int columns,int minValue, int maxValue)
 { int[,] newArray = new int[rows, columns];
    
@@ -226,3 +227,4 @@ Show2dArray(myArray);
 int sum = SumOfElementsOfArray(myArray);
 SumOfElementsOfArray(myArray);
 Console.WriteLine($"Sum of elements main diagonale is {sum}");
+*/
