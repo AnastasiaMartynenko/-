@@ -82,7 +82,7 @@ void FindElementByCoordinats (int[,] array, int indexOfRow, int indexOfColumn)
      Console.WriteLine($"This element doesn't exist.");
    }
    else 
-   Console.WriteLine($"{array[indexOfRow - 1, indexOfColumn - 1]} is the element under your coordinates");
+   Console.WriteLine($"{array[indexOfRow - 1, indexOfColumn - 1]} is the element of array under your coordinates");
 }
 
 Console.Write("Input number of rows: ");
@@ -94,9 +94,9 @@ int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input max posiible value: ");
 int max = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input position for the row: ");
+Console.Write("Input position of the row: ");
 int row1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input position for the column: ");
+Console.Write("Input position of the column: ");
 int column1 = Convert.ToInt32(Console.ReadLine());
 
 int[,] myArray = CreateRandom2dArray(m, n, min, max);
@@ -111,7 +111,7 @@ FindElementByCoordinats(myArray, row1, column1);
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 */
-
+/*
 int[,] CreateRandom2dArray(int rows, int columns,int minValue, int maxValue)
 { int[,] newArray = new int[rows, columns];
    
@@ -164,8 +164,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] myArray = CreateRandom2dArray(m, n, min, max);
 Show2dArray(myArray);
 FindColumnsAVG(myArray);
+*/
+  
 
-        
-   
-   
-      
+
