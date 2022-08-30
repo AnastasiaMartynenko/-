@@ -166,7 +166,7 @@ Show2dArray(myArray);
 FindColumnsAVG(myArray);
 */
 //Второй способ решения, но тоже не получается ничего
-
+/*
   int[,] CreateRandom2dArray(int rows, int columns,int minValue, int maxValue)
 { 
    int[,] newArray = new int[rows, columns];
@@ -215,3 +215,8 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] myArray = CreateRandom2dArray(m, n, min, max);
 Show2dArray(myArray);
 FindColumnAVG(myArray);
+Show2dArray(myArray);
+
+*/
+
+//Math.Round(Convert.ToDouble(new Random().Next(minValue, maxValue + 1)) + new Random().NextDouble(), 1
