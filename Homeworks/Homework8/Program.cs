@@ -72,6 +72,7 @@ Show2dArray(myArray);
 5 2 6 7
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 */
+/*
 int[,] CreateRandom2dArray(int rows, int columns, int minValue, int maxValue)
 {
     int[,] newArray = new int[rows, columns];
@@ -133,3 +134,108 @@ Show2dArray(myArray);
 Console.WriteLine();
 
 ShowMinSumOfElementsInRow(myArray);
+*/
+/*
+Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+Например, даны 2 матрицы:
+2 4 | 3 4
+3 2 | 3 3
+Результирующая матрица будет:
+18 20
+15 18
+*/
+/*
+int[,] CreateFirstRandom2dArray(int rows, int columns, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows, columns];
+    for(int i = 0; i < rows; i++)
+        for(int j = 0; j < columns; j++)
+            newArray[i,j] = new Random().Next(minValue, maxValue + 1);
+    return newArray;
+}
+void ShowFirst2dArray(int[,] array)
+{
+    {
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + " ");
+        
+        Console.WriteLine();
+    }
+}
+}
+
+int[,] CreateSecondRandom2dArray(int rows, int columns, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows, columns];
+    for(int i = 0; i < rows; i++)
+        for(int j = 0; j < columns; j++)
+            newArray[i,j] = new Random().Next(minValue, maxValue + 1);
+    return newArray;
+}
+void ShowSecond2dArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + " ");
+        
+        Console.WriteLine();
+    }
+}
+
+int[,] FindCompositionOfMatrixes(int[,] matrix1, int[,] matrix2)
+{
+    int[,] composition  = new int[matrix1.GetLength(0), matrix2.GetLength(1)];
+        for (int i = 0; i < composition.GetLength(0); i++)
+        {
+            for (int j = 0; j < composition.GetLength(1); j++)
+            {
+                composition[i, j] = matrix1[i, j] * matrix2[i, j];
+
+            }
+        }
+        return composition;       
+}
+void ShowComposotion(int[,] array)
+{
+    {
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i,j] + " ");
+        
+        Console.WriteLine();
+    }
+}
+}
+Console.Write("Input number of rows for the first matrix: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of columns for the first matrix: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value for the first matrix: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value for the first matrix: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input number of rows for the second matrix: ");
+int k = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of columns for the second matrix: ");
+int l = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value for the second matrix: ");
+int min2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value for the second matrix: ");
+int max2 = Convert.ToInt32(Console.ReadLine());
+
+int[,] myFirstArray = CreateFirstRandom2dArray(m, n, min, max);
+ShowFirst2dArray(myFirstArray);
+Console.WriteLine();
+
+int[,] mySecondArray = CreateSecondRandom2dArray(k, l, min2, max2);
+ShowSecond2dArray(mySecondArray);
+Console.WriteLine();
+
+int[,] matrixComposition = FindCompositionOfMatrixes(myFirstArray, mySecondArray);
+ShowComposotion(matrixComposition);
+*/
