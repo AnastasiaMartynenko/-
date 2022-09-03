@@ -245,7 +245,7 @@ ShowComposotion(matrixComposition);
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)
 */
-
+//Я просто создала трехмерный массив
 int[,,] CreateRandom3DArray(int array1, int array2, int array3, int mint, int max) 
 {
     int[,,] result = new int[array1, array2, array3];
