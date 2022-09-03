@@ -246,6 +246,7 @@ ShowComposotion(matrixComposition);
 26(1,0,1) 55(1,1,1)
 */
 //Я просто создала трехмерный массив
+/*
 int[,,] CreateRandom3DArray(int array1, int array2, int array3, int mint, int max) 
 {
     int[,,] result = new int[array1, array2, array3];
@@ -294,5 +295,5 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int[, ,] myArray = CreateRandom3DArray(m, n, o, min, max);
 Show3DArray(myArray);
-
+*/
 
